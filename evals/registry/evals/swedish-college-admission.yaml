@@ -1,0 +1,19 @@
+swedish-college-admission.words-2023:
+  id: swedish-college-admission.words-2023.v0
+  description: Testing the models ability to answer multiple choice questions from the Swedish college admission test (Högskoleprovet) 2023, the words/synonyms (ORD) parts, correctly.
+  disclaimer: Dataset currently includes only the closest-word(s) questions.
+  metrics: [accuracy]
+swedish-college-admission.words-2023.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: swedish-college-admission/questions_words_2023.jsonl
+
+swedish-college-admission.words-2022:
+  id: swedish-college-admission.words-2022.v0
+  description: Testing the models ability to answer multiple choice questions from the Swedish college admission test (Högskoleprovet) 2022, the words/synonyms (ORD) parts, correctly.
+  disclaimer: Dataset currently includes only the closest-word(s) questions.
+  metrics: [accuracy]
+swedish-college-admission.words-2022.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: swedish-college-admission/questions_words_2022.jsonl
